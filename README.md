@@ -1,0 +1,1 @@
+javafx-cdi-demo
