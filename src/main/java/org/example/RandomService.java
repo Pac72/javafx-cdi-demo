@@ -5,7 +5,7 @@ import java.util.Random;
 
 @Singleton
 public class RandomService {
-    private Random rnd = new Random();
+    private final Random rnd = new Random();
 
     public int nextInt() {
         return rnd.nextInt();

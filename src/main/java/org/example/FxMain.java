@@ -17,7 +17,7 @@ public class FxMain {
 
     public void start(Stage stage, Application.Parameters parameters) throws IOException {
         try (InputStream fxml = MainController.class.getResourceAsStream("/ui.fxml")) {
-            Parent root = (Parent) fxmlLoader.load(fxml);
+            Parent root = fxmlLoader.load(fxml);
             stage.setScene(new Scene(root));
             stage.show();
         }

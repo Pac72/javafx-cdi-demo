@@ -14,10 +14,10 @@ public class FXMLLoaderProducer {
 
     @Produces
     public FXMLLoader createLoader() {
-        return new FXMLLoader( null, null, null, new Callback<Class<?>, Object>() {
-            @Override public Object call( Class<?> param ) {
-                return instance.select( param ).get();
+        return new FXMLLoader(null, null, null, new Callback<Class<?>, Object>() {
+            @Override public Object call(Class<?> param) {
+                return instance.select(param).get();
             }
-        }, StandardCharsets.UTF_8 );
+        }, StandardCharsets.UTF_8);
     }
 }

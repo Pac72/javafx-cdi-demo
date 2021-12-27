@@ -9,8 +9,8 @@ public class MainApp extends Application {
 
     private Weld weld;
 
-    public static void main( String[] args ) {
-        Application.launch( args );
+    public static void main(String[] args) {
+        Application.launch(args);
     }
 
     @Override
@@ -20,7 +20,7 @@ public class MainApp extends Application {
 
     @Override
     public void start( Stage stage ) throws IOException {
-        weld.initialize().instance().select(FxMain.class).get().start(stage, getParameters());
+        weld.initialize().select(FxMain.class).get().start(stage, getParameters());
     }
 
     @Override
