@@ -1,9 +1,10 @@
 package org.example;
 
-import javax.inject.Singleton;
+import jakarta.enterprise.context.ApplicationScoped;
+
 import java.util.Random;
 
-@Singleton
+@ApplicationScoped
 public class RandomService {
     private final Random rnd = new Random();
 

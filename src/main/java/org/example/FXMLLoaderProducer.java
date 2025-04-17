@@ -1,11 +1,11 @@
 package org.example;
 
+import jakarta.enterprise.inject.Instance;
+import jakarta.enterprise.inject.Produces;
+import jakarta.inject.Inject;
 import javafx.fxml.FXMLLoader;
 import javafx.util.Callback;
 
-import javax.enterprise.inject.Instance;
-import javax.enterprise.inject.Produces;
-import javax.inject.Inject;
 import java.nio.charset.StandardCharsets;
 
 public class FXMLLoaderProducer {

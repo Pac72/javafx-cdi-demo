@@ -1,15 +1,17 @@
 package org.example;
 
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import javax.inject.Inject;
 import java.io.IOException;
 import java.io.InputStream;
 
+@Named("FxMain")
 public class FxMain {
 
     @Inject
